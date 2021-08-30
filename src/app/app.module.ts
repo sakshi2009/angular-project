@@ -9,6 +9,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { GuestMenuComponent } from './guest-menu/guest-menu.component';
+import { AdminMenuComponent } from './admin-menu/admin-menu.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
@@ -16,9 +17,10 @@ import { GuestMenuComponent } from './guest-menu/guest-menu.component';
     {path:'',component:LoginComponent},
     {path:'guestlogin',component:GuestLoginComponent},
     {path:'adminlogin',component:AdminLoginComponent},
-    {path:'guestmenu', component:GuestMenuComponent}
+    {path:'guestmenu', component:GuestMenuComponent},
+    {path:'adminmenu', component:AdminMenuComponent},
   ]) ],
-  declarations: [ AppComponent, HelloComponent,GuestLoginComponent,AdminLoginComponent ,LoginComponent, GuestMenuComponent],
+  declarations: [ AppComponent, HelloComponent,GuestLoginComponent,AdminLoginComponent ,LoginComponent, GuestMenuComponent, AdminMenuComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
